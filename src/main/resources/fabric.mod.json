@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "tntbuilder",
+  "version": "${version}",
+  "name": "HolyWorld TNT Builder",
+  "description": "Client-side macro: places a TNT cannon, loads TNT B, powers it with a redstone block, waits for the cycle to finish and breaks the cannon.",
+  "authors": ["User"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.holyworld.tntbuilder.HolyWorldTntBuilder"
+    ]
+  },
+  "mixins": [
+    "tntbuilder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
